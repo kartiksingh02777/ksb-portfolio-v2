@@ -23,6 +23,27 @@ export const metadata: Metadata = siteConfig;
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Kartik Singh Baghel",
+              url: "https://kartik-baghel.netlify.app",
+              jobTitle: "UI/UX Designer & Web Developer",
+              worksFor: {
+                "@type": "Organization",
+                name: "KSB Digital Studio"
+              },
+              sameAs: [
+                "https://www.linkedin.com/in/kartiksinghbaghel"
+              ]
+            })
+          }}
+        />
+      </head>
       <body
         className={cn(
           "bg-[#000501] overflow-y-scroll overflow-x-hidden",
