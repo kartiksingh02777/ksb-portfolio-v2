@@ -48,6 +48,7 @@ Here is the folder structure of this app.
 space-portfolio/
   |- app/
     |-- calculator/
+    |-- projects/
     |-- store/
     |-- apple-icon.png
     |-- favicon.ico
@@ -56,6 +57,8 @@ space-portfolio/
     |-- icon2.png
     |-- layout.tsx
     |-- page.tsx
+    |-- robots.ts
+    |-- sitemap.ts
   |- components/
     |-- main/
     |-- sub/
