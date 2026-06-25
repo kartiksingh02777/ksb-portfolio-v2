@@ -10,7 +10,7 @@ export default function StorePage() {
       price: "$19",
       desc: "A fully responsive, dark-mode HTML/CSS portfolio template designed for creative agencies.",
       img: "https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=800&auto=format&fit=crop",
-      features: ["✨ Figma File Included", "✨ Fully Responsive"],
+      features: ["Figma File Included", "Fully Responsive"],
       bestseller: true,
       link: "https://kartikbaghel.gumroad.com/"
     },
@@ -20,7 +20,7 @@ export default function StorePage() {
       price: "$15",
       desc: "30+ high-converting Instagram/Pinterest templates in PSD and Canva formats.",
       img: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=800&auto=format&fit=crop",
-      features: ["✨ Canva & PSD", "✨ Drag & Drop"],
+      features: ["Canva & PSD", "Drag & Drop"],
       bestseller: false,
       link: "https://kartikbaghel.gumroad.com/"
     },
@@ -30,7 +30,7 @@ export default function StorePage() {
       price: "$9",
       desc: "The ultimate Notion system to track clients, manage invoices, and organize your freelance business.",
       img: "https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?q=80&w=800&auto=format&fit=crop",
-      features: ["✨ CRM Tracker", "✨ Invoice Generator"],
+      features: ["CRM Tracker", "Invoice Generator"],
       bestseller: false,
       link: "https://kartikbaghel.gumroad.com/"
     }
