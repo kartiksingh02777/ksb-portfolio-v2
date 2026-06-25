@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import React from "react";
 import Image from "next/image";
 
@@ -10,7 +10,7 @@ export default function StorePage() {
       price: "$19",
       desc: "A fully responsive, dark-mode HTML/CSS portfolio template designed for creative agencies.",
       img: "https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=800&auto=format&fit=crop",
-      features: ["âœ¨ Figma File Included", "âœ¨ Fully Responsive"],
+      features: ["Figma File Included", "Fully Responsive"],
       bestseller: true,
       link: "https://kartikbaghel.gumroad.com/"
     },
@@ -20,7 +20,7 @@ export default function StorePage() {
       price: "$15",
       desc: "30+ high-converting Instagram/Pinterest templates in PSD and Canva formats.",
       img: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=800&auto=format&fit=crop",
-      features: ["âœ¨ Canva & PSD", "âœ¨ Drag & Drop"],
+      features: ["Canva & PSD", "Drag & Drop"],
       bestseller: false,
       link: "https://kartikbaghel.gumroad.com/"
     },
@@ -30,7 +30,7 @@ export default function StorePage() {
       price: "$9",
       desc: "The ultimate Notion system to track clients, manage invoices, and organize your freelance business.",
       img: "https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?q=80&w=800&auto=format&fit=crop",
-      features: ["âœ¨ CRM Tracker", "âœ¨ Invoice Generator"],
+      features: ["CRM Tracker", "Invoice Generator"],
       bestseller: false,
       link: "https://kartikbaghel.gumroad.com/"
     }
@@ -83,14 +83,12 @@ export default function StorePage() {
                     <span key={i} className="text-xs font-medium text-gray-300 tracking-wider uppercase">{feature}</span>
                   ))}
                 </div>
-                <a 
-                  href={product.link}
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  className="mt-4 w-full text-center py-3 rounded-lg border border-green-500 text-[#a855f7] drop-shadow-[0_2px_2px_rgba(168,85,247,0.5)] font-bold hover:bg-green-500 hover:text-black transition-colors"
+                <button 
+                  disabled
+                  className="mt-4 w-full text-center py-3 rounded-lg border border-gray-600 text-gray-400 font-bold cursor-not-allowed bg-[rgba(20,20,20,0.5)]"
                 >
-                  Buy Now â†—
-                </a>
+                  Coming Soon 🚀
+                </button>
               </div>
             </article>
           ))}
