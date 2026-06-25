@@ -1,4 +1,4 @@
-﻿import React from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { slideInFromLeft, slideInFromRight } from "@/lib/motion";
 
@@ -22,7 +22,7 @@ export const WhoIAm = () => {
         </div>
 
         <p className="text-lg text-gray-400 my-2 max-w-[600px] leading-relaxed">
-          Founder &amp; Creative Director of <strong className="text-white">KSB Digital Studio</strong> â€” a one-man powerhouse based in India. I design premium digital identities that don&apos;t just look good â€” they <em className="text-[#a855f7] drop-shadow-[0_2px_2px_rgba(168,85,247,0.5)] not-italic font-semibold">convert</em>.
+          Founder &amp; Creative Director of <strong className="text-white">KSB Digital Studio</strong> - a one-man powerhouse based in India. I design premium digital identities that don&apos;t just look good - they <em className="text-[#a855f7] drop-shadow-[0_2px_2px_rgba(168,85,247,0.5)] not-italic font-semibold">convert</em>.
         </p>
 
         <p className="text-lg text-gray-400 my-2 max-w-[600px] leading-relaxed">
