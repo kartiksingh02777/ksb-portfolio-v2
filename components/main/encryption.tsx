@@ -38,7 +38,7 @@ export const Encryption = () => {
           autoPlay
           playsInline
           preload="false"
-          className="w-full h-auto hue-rotate-[210deg] [-webkit-mask-image:radial-gradient(50%_50%_at_50%_50%,#000_20%,transparent_80%)] [mask-image:radial-gradient(50%_50%_at_50%_50%,#000_20%,transparent_80%)]"
+          className="w-full h-auto hue-rotate-[210deg] mix-blend-screen"
         >
           <source src="/videos/encryption-bg.webm" type="video/webm" />
         </video>
