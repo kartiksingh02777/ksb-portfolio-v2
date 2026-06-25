@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
@@ -91,7 +91,7 @@ export default function CalculatorPage() {
         <div className="flex flex-col gap-10">
           {/* Web Development Section */}
           <div className="flex flex-col gap-4">
-            <h2 className="text-2xl font-bold text-white border-b border-[#10B98130] pb-2">ðŸŒ Web Development</h2>
+            <h2 className="text-2xl font-bold text-white border-b border-[#10B98130] pb-2">🌐 Web Development</h2>
             <div className="flex flex-col gap-3">
               {[
                 { val: 299, title: "Landing Page", desc: "High-converting single page" },
@@ -114,7 +114,7 @@ export default function CalculatorPage() {
 
           {/* Graphic Design Section */}
           <div className="flex flex-col gap-4">
-            <h2 className="text-2xl font-bold text-white border-b border-[#10B98130] pb-2">ðŸŽ¨ Graphic Design</h2>
+            <h2 className="text-2xl font-bold text-white border-b border-[#10B98130] pb-2">🎨 Graphic Design</h2>
             <div className="flex flex-col gap-3">
               {[
                 { val: 149, title: "Logo & Branding Kit", desc: "Premium logo, fonts, & colors" },
@@ -137,7 +137,7 @@ export default function CalculatorPage() {
 
           {/* Video Editing Section */}
           <div className="flex flex-col gap-4">
-            <h2 className="text-2xl font-bold text-white border-b border-[#10B98130] pb-2">ðŸŽ¬ Video Editing</h2>
+            <h2 className="text-2xl font-bold text-white border-b border-[#10B98130] pb-2">🎬 Video Editing</h2>
             <div className="flex flex-col gap-3">
               {[
                 { val: 49, title: "Reel / TikTok Edit", desc: "Fast-paced, trendy edits (per video)" },
@@ -159,7 +159,7 @@ export default function CalculatorPage() {
 
           {/* Marketing Section */}
           <div className="flex flex-col gap-4">
-            <h2 className="text-2xl font-bold text-white border-b border-[#10B98130] pb-2">ðŸš€ Digital Marketing</h2>
+            <h2 className="text-2xl font-bold text-white border-b border-[#10B98130] pb-2">🚀 Digital Marketing</h2>
             <div className="flex flex-col gap-3">
               {[
                 { val: 399, title: "Social Media Management", desc: "Monthly handling of 2 platforms" },
@@ -190,7 +190,7 @@ export default function CalculatorPage() {
             onClick={submitProject}
             className="button-primary px-8 py-4 rounded-full font-bold text-white hover:scale-105 transition-transform shadow-[0_0_20px_rgba(16,185,129,0.3)]"
           >
-            Start Your Project â†—
+            Start Your Project ↗
           </button>
         </div>
       </div>
