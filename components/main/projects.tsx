@@ -116,7 +116,7 @@ export const Projects = () => {
               className="relative w-[900px] h-[500px] rounded-2xl overflow-hidden border border-[rgba(168,85,247,0.3)] bg-[#030014] flex flex-row shadow-[0_0_30px_rgba(168,85,247,0.15)] flex-shrink-0"
             >
               {/* Left Side: Image */}
-              <div className="w-[55%] relative h-full bg-black">
+              <div className="w-[55%] relative h-full bg-black border-r border-[rgba(168,85,247,0.3)]">
                 <Image
                   src={study.src}
                   alt={study.title}

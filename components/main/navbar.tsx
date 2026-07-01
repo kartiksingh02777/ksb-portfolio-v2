@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -23,15 +23,26 @@ export const Navbar = () => {
         {/* Web Navbar */}
         <div className="hidden md:flex w-auto max-w-[900px] h-full flex-row items-center justify-between md:mr-20">
           <div className="flex items-center justify-between w-full h-auto border-[rgba(16,185,129,0.38)] bg-[rgba(3,20,10,0.37)] mr-[15px] px-[40px] py-[10px] rounded-full text-gray-200 gap-8">
-            {NAV_LINKS.map((link) => (
-              <Link
-                key={link.title}
-                href={link.link}
-                className="cursor-pointer hover:text-[#a855f7] drop-shadow-[0_2px_2px_rgba(168,85,247,0.5)] transition text-sm font-semibold tracking-wide"
-              >
-                {link.title}
-              </Link>
-            ))}
+            {NAV_LINKS.map((link) => {
+              const isHash = link.link.includes("#");
+              return isHash ? (
+                <a
+                  key={link.title}
+                  href={link.link}
+                  className="cursor-pointer hover:text-[#a855f7] drop-shadow-[0_2px_2px_rgba(168,85,247,0.5)] transition text-sm font-semibold tracking-wide"
+                >
+                  {link.title}
+                </a>
+              ) : (
+                <Link
+                  key={link.title}
+                  href={link.link}
+                  className="cursor-pointer hover:text-[#a855f7] drop-shadow-[0_2px_2px_rgba(168,85,247,0.5)] transition text-sm font-semibold tracking-wide"
+                >
+                  {link.title}
+                </Link>
+              );
+            })}
           </div>
         </div>
 
@@ -60,16 +71,28 @@ export const Navbar = () => {
         <div className="absolute top-[65px] left-0 w-full bg-[#000501] p-5 flex flex-col items-center text-gray-300 md:hidden">
           {/* Links */}
           <div className="flex flex-col items-center gap-4">
-            {NAV_LINKS.map((link) => (
-              <Link
-                key={link.title}
-                href={link.link}
-                className="cursor-pointer hover:text-[#a855f7] drop-shadow-[0_2px_2px_rgba(168,85,247,0.5)] transition text-center"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {link.title}
-              </Link>
-            ))}
+            {NAV_LINKS.map((link) => {
+              const isHash = link.link.includes("#");
+              return isHash ? (
+                <a
+                  key={link.title}
+                  href={link.link}
+                  className="cursor-pointer hover:text-[#a855f7] drop-shadow-[0_2px_2px_rgba(168,85,247,0.5)] transition text-center"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  {link.title}
+                </a>
+              ) : (
+                <Link
+                  key={link.title}
+                  href={link.link}
+                  className="cursor-pointer hover:text-[#a855f7] drop-shadow-[0_2px_2px_rgba(168,85,247,0.5)] transition text-center"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  {link.title}
+                </Link>
+              );
+            })}
           </div>
 
           {/* Social Icons */}
