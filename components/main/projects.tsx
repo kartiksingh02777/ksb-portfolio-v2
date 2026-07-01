@@ -56,6 +56,26 @@ const caseStudies = [
     techStack: "Figma, Next.js, Framer Motion",
     description: "Developed a bold, energetic visual identity and a fast-performing ticketing website for an upcoming electronic music festival."
   },
+  { 
+    id: 6, 
+    slug: "aarambh-templates",
+    src: "/assets/aarambh_templates.png", 
+    title: "Aarambh Startup Templates",
+    role: "Founding Graphic Designer",
+    timeTaken: "1 Week",
+    techStack: "Adobe Express, Typography",
+    description: "Designed a minimalist luxury template catalogue to help local businesses scale their brand authority and social media presence."
+  },
+  { 
+    id: 7, 
+    slug: "siddharth-facts",
+    src: "/assets/siddharth_facts.png", 
+    title: "Siddharth Facts Challenge",
+    role: "Graphic Design & Inpainting",
+    timeTaken: "3 Days",
+    techStack: "Adobe Express, AI Retouching",
+    description: "Created high-contrast educational infographics featuring clean typographic highlights and keyword-focused formatting."
+  },
 ];
 
 export const Projects = () => {
@@ -64,8 +84,8 @@ export const Projects = () => {
     target: targetRef,
   });
 
-  // Using -75% since the cards are much wider now, we need more scroll distance
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-75%"]);
+  // Updated scroll distance for 8 total slides (1 title + 7 project cards)
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-83%"]);
 
   return (
     <section

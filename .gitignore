@@ -34,3 +34,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# large 3D assets
+public/assets/**/*.blend
+public/assets/**/*.blend1
+public/assets/**/*.zip
+public/assets/mountain/

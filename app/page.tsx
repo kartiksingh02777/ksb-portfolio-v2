@@ -1,6 +1,7 @@
-﻿import { Encryption } from "@/components/main/encryption";
+import { Encryption } from "@/components/main/encryption";
 import { Hero } from "@/components/main/hero";
 import { Projects } from "@/components/main/projects";
+import { Systems } from "@/components/main/systems";
 import { Skills } from "@/components/main/skills";
 import { WhoIAm } from "@/components/main/who-i-am";
 import { WhatWeDo } from "@/components/main/what-we-do";
@@ -16,6 +17,7 @@ export default function Home() {
         <Encryption />
         <WhatWeDo />
         <Projects />
+        <Systems />
         <MyArsenal />
       </div>
     </main>
