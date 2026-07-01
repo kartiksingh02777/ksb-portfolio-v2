@@ -40,7 +40,7 @@ const developerProjects = [
 
 export const Systems = () => {
   return (
-    <section id="systems" className="relative w-full py-20 px-6 md:px-20 z-[20] bg-black/40 backdrop-blur-md border-t border-white/5">
+    <section id="systems" className="relative w-full py-20 px-6 md:px-20 z-[20] border-t border-white/5">
       <div className="max-w-6xl mx-auto space-y-12">
         
         {/* Header */}

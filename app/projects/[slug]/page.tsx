@@ -60,6 +60,61 @@ const caseStudies = [
     challenge: "The festival needed a brand that stood out in a crowded market, and a ticketing site capable of handling sudden traffic spikes.",
     solution: "Created a neon-heavy, cyberpunk-inspired visual identity. Built the website using Next.js for blazing fast static rendering, ensuring users could buy tickets without the site crashing during peak hours."
   },
+  { 
+    slug: "aarambh-templates",
+    src: "/assets/aarambh_templates.png", 
+    title: "Aarambh Startup Templates",
+    role: "Founding Graphic Designer",
+    timeTaken: "1 Week",
+    techStack: "Adobe Express, Typography",
+    description: "Designed a minimalist luxury template catalogue to help local businesses scale their brand authority and social media presence.",
+    challenge: "The client wanted a premium branding catalogue for various niches (salons, cafes, jewellery) but needed templates that feel highly customizable and editorial without looking busy or using overdone text effects.",
+    solution: "Rebuilt the design assets in Adobe Express with spacious visual grid systems, classic serif/sans-serif typography, and clear visual hierarchy. This clean approach directly led to a successful 'Founding Designer' partnership."
+  },
+  { 
+    slug: "siddharth-facts",
+    src: "/assets/siddharth_facts.png", 
+    title: "Siddharth Facts Challenge",
+    role: "Graphic Design & Inpainting",
+    timeTaken: "3 Days",
+    techStack: "Adobe Express, AI Retouching",
+    description: "Created high-contrast educational infographics featuring clean typographic highlights and keyword-focused formatting.",
+    challenge: "Standard social media facts posts often lack visual polish and readability. The client required high-impact, clean layouts with text that directly guides the user's attention.",
+    solution: "Used AI-driven inpainting to remove distracting text from animal and human photos, then overlaid high-contrast typography in Adobe Express using color-coded keyword highlights (yellow/white) for instant readability."
+  },
+  { 
+    slug: "ksb-dashboard",
+    src: "/assets/ksb_dashboard.png", 
+    title: "KSB Agency Command Center",
+    role: "Fullstack Development & UI/UX",
+    timeTaken: "2 Weeks",
+    techStack: "Next.js 14, Tailwind CSS, LocalStorage",
+    description: "Developed a proprietary, standalone desktop dashboard for tracking agency leads, managing design templates, and planning daily tasks locally with offline persistence.",
+    challenge: "Managing active client leads, task status, WordPress automations, and assets across multiple local folders was slow and disorganized. We needed a centralized hub.",
+    solution: "Built a local standalone command dashboard using Next.js, React, and LocalStorage for secure data retention. Combined it with a background shell script to run it on Windows start in a custom, borderless Edge App Mode."
+  },
+  { 
+    slug: "nishi-services",
+    src: "/assets/nishi_services.png", 
+    title: "Nishi Services 3D Platform",
+    role: "Frontend & 3D Interactive Design",
+    timeTaken: "3 Weeks",
+    techStack: "Three.js, GSAP, Next.js, Vanta",
+    description: "Built an ultra-premium, dark-mode 3D prototype for a major ₹150Cr+ Real Estate portfolio featuring interactive 3D particle networks and glassmorphic user controls.",
+    challenge: "A luxury ₹150Cr+ real estate developer needed a website prototype that felt extremely high-end, responsive, and visually futuristic to attract high-net-worth investors.",
+    solution: "Designed a dark-themed glassmorphism interface backed by a Three.js interactive 3D particle canvas and smooth GSAP scroll-triggered animations."
+  },
+  { 
+    slug: "wp-automation",
+    src: "/assets/wp_automation.png", 
+    title: "WordPress Automation Engine",
+    role: "Backend Developer & Scripting",
+    timeTaken: "1 Week",
+    techStack: "Python Scripting, REST API Tokens, Task Scheduler",
+    description: "Engineered a background content syndication script that fetches local database assets and automates scheduling to WordPress pages.",
+    challenge: "Uploading, formatting, and scheduling posts to WordPress manually for multiple client catalogs took hours of repetitive task time.",
+    solution: "Developed a headless Python automation script using WordPress REST API endpoints and secure authentication tokens that automatically formats local content sheets and posts them to live directories."
+  },
 ];
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
