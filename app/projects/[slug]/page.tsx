@@ -65,22 +65,41 @@ const caseStudies = [
     src: "/assets/aarambh_templates.png", 
     title: "Aarambh Startup Templates",
     role: "Founding Graphic Designer",
-    timeTaken: "1 Week",
+    timeTaken: "1 Day",
     techStack: "Adobe Express, Typography",
     description: "Designed a minimalist luxury template catalogue to help local businesses scale their brand authority and social media presence.",
     challenge: "The client wanted a premium branding catalogue for various niches (salons, cafes, jewellery) but needed templates that feel highly customizable and editorial without looking busy or using overdone text effects.",
-    solution: "Rebuilt the design assets in Adobe Express with spacious visual grid systems, classic serif/sans-serif typography, and clear visual hierarchy. This clean approach directly led to a successful 'Founding Designer' partnership."
+    solution: "Rebuilt the design assets in Adobe Express with spacious visual grid systems, classic serif/sans-serif typography, and clear visual hierarchy. This clean approach directly led to a successful 'Founding Designer' partnership.",
+    testimonial: {
+      text: "Kartik's visual grid system is incredibly clean. He instantly understood our luxury brand concept and delivered templates that we could immediately scale. Thrilled to have him as a Founding Designer!",
+      author: "Aarambh Startup Founder"
+    },
+    gallery: [
+      "/assets/aarambh_templates.png",
+      "/assets/aarambh_gallery_1.png",
+      "/assets/aarambh_gallery_2.png"
+    ]
   },
   { 
     slug: "siddharth-facts",
     src: "/assets/siddharth_facts.png", 
     title: "Siddharth Facts Challenge",
     role: "Graphic Design & Inpainting",
-    timeTaken: "3 Days",
+    timeTaken: "1 Day",
     techStack: "Adobe Express, AI Retouching",
     description: "Created high-contrast educational infographics featuring clean typographic highlights and keyword-focused formatting.",
     challenge: "Standard social media facts posts often lack visual polish and readability. The client required high-impact, clean layouts with text that directly guides the user's attention.",
-    solution: "Used AI-driven inpainting to remove distracting text from animal and human photos, then overlaid high-contrast typography in Adobe Express using color-coded keyword highlights (yellow/white) for instant readability."
+    solution: "Used AI-driven inpainting to remove distracting text from animal and human photos, then overlaid high-contrast typography in Adobe Express using color-coded keyword highlights (yellow/white) for instant readability.",
+    testimonial: {
+      text: "Amazing graphic cleaning! The AI retouching removed all clutter from the images, and the yellow-highlighted typography made the facts instantly scroll-stopping. Done in less than 24 hours!",
+      author: "Siddharth, Content Creator"
+    },
+    gallery: [
+      "/assets/siddharth_facts.png",
+      "/assets/siddharth_gallery_1.png",
+      "/assets/siddharth_gallery_2.png",
+      "/assets/siddharth_gallery_3.png"
+    ]
   },
   { 
     slug: "ksb-dashboard",
@@ -91,7 +110,16 @@ const caseStudies = [
     techStack: "Next.js 14, Tailwind CSS, LocalStorage",
     description: "Developed a proprietary, standalone desktop dashboard for tracking agency leads, managing design templates, and planning daily tasks locally with offline persistence.",
     challenge: "Managing active client leads, task status, WordPress automations, and assets across multiple local folders was slow and disorganized. We needed a centralized hub.",
-    solution: "Built a local standalone command dashboard using Next.js, React, and LocalStorage for secure data retention. Combined it with a background shell script to run it on Windows start in a custom, borderless Edge App Mode."
+    solution: "Built a local standalone command dashboard using Next.js, React, and LocalStorage for secure data retention. Combined it with a background shell script to run it on Windows start in a custom, borderless Edge App Mode.",
+    testimonial: {
+      text: "This dashboard serves as the central engine of KSB Digital Studio, syndicating blog contents and organizing our agency pipeline offline with zero lag.",
+      author: "KSB Internal Operations"
+    },
+    gallery: [
+      "/assets/ksb_dashboard.png",
+      "/assets/dashboard_gallery_1.png",
+      "/assets/dashboard_gallery_2.png"
+    ]
   },
   { 
     slug: "nishi-services",
@@ -102,7 +130,18 @@ const caseStudies = [
     techStack: "Three.js, GSAP, Next.js, Vanta",
     description: "Built an ultra-premium, dark-mode 3D prototype for a major ₹150Cr+ Real Estate portfolio featuring interactive 3D particle networks and glassmorphic user controls.",
     challenge: "A luxury ₹150Cr+ real estate developer needed a website prototype that felt extremely high-end, responsive, and visually futuristic to attract high-net-worth investors.",
-    solution: "Designed a dark-themed glassmorphism interface backed by a Three.js interactive 3D particle canvas and smooth GSAP scroll-triggered animations."
+    solution: "Designed a dark-themed glassmorphism interface backed by a Three.js interactive 3D particle canvas and smooth GSAP scroll-triggered animations.",
+    testimonial: {
+      text: "The 3D interactive web prototype was spectacular. It felt futuristic and luxurious, representing our property portfolio exactly how we envisioned.",
+      author: "Amit Gupta, Nishi Services Founder"
+    },
+    gallery: [
+      "/assets/nishi_services.png",
+      "/assets/nishi_gallery_1.png",
+      "/assets/nishi_gallery_2.png",
+      "/assets/nishi_gallery_3.png",
+      "/assets/nishi_gallery_4.png"
+    ]
   },
   { 
     slug: "wp-automation",
@@ -113,7 +152,14 @@ const caseStudies = [
     techStack: "Python Scripting, REST API Tokens, Task Scheduler",
     description: "Engineered a background content syndication script that fetches local database assets and automates scheduling to WordPress pages.",
     challenge: "Uploading, formatting, and scheduling posts to WordPress manually for multiple client catalogs took hours of repetitive task time.",
-    solution: "Developed a headless Python automation script using WordPress REST API endpoints and secure authentication tokens that automatically formats local content sheets and posts them to live directories."
+    solution: "Developed a headless Python automation script using WordPress REST API endpoints and secure authentication tokens that automatically formats local content sheets and posts them to live directories.",
+    testimonial: {
+      text: "Syndicating blog content automatically from our local vault directly to the live site saved us over 4 hours of weekly manual work.",
+      author: "Wordpress Blog Administrator"
+    },
+    gallery: [
+      "/assets/wp_automation.png"
+    ]
   },
 ];
 
@@ -193,6 +239,43 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
             </p>
           </div>
         </div>
+
+        {/* Testimonial Block */}
+        {study.testimonial && (
+          <div className="mt-20 p-8 rounded-3xl border border-purple-500/20 bg-[#030014]/60 backdrop-blur-md relative overflow-hidden">
+            <div className="absolute top-0 left-0 w-1.5 h-full bg-purple-500 shadow-[0_0_15px_rgba(168,85,247,0.8)]" />
+            <div className="flex flex-col gap-4">
+              <span className="text-5xl text-purple-500/30 font-serif leading-none">“</span>
+              <p className="text-gray-200 text-xl italic font-medium leading-relaxed -mt-6">
+                {study.testimonial.text}
+              </p>
+              <div className="mt-2 text-right">
+                <span className="block text-sm uppercase tracking-widest text-purple-400 font-semibold">— {study.testimonial.author}</span>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Gallery Grid Section */}
+        {study.gallery && study.gallery.length > 0 && (
+          <div className="mt-24 space-y-8">
+            <h2 className="text-4xl font-bold text-white tracking-widest uppercase">
+              Project <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#a855f7] to-[#d8b4fe] drop-shadow-[0_2px_4px_rgba(168,85,247,0.4)]">Gallery</span>
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {study.gallery.map((imgUrl, index) => (
+                <div key={index} className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/10 bg-black/40 hover:border-purple-500/40 hover:shadow-[0_0_25px_rgba(168,85,247,0.15)] transition-all duration-500 group">
+                  <Image
+                    src={imgUrl}
+                    alt={`${study.title} screenshot ${index + 1}`}
+                    fill
+                    className="object-contain p-2 group-hover:scale-[1.03] transition-transform duration-500"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
         
         <div className="mt-32 text-center">
           <h2 className="text-4xl font-bold mb-8">Ready to build something similar?</h2>

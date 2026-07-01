@@ -62,7 +62,7 @@ const caseStudies = [
     src: "/assets/aarambh_templates.png", 
     title: "Aarambh Startup Templates",
     role: "Founding Graphic Designer",
-    timeTaken: "1 Week",
+    timeTaken: "1 Day",
     techStack: "Adobe Express, Typography",
     description: "Designed a minimalist luxury template catalogue to help local businesses scale their brand authority and social media presence."
   },
@@ -72,7 +72,7 @@ const caseStudies = [
     src: "/assets/siddharth_facts.png", 
     title: "Siddharth Facts Challenge",
     role: "Graphic Design & Inpainting",
-    timeTaken: "3 Days",
+    timeTaken: "1 Day",
     techStack: "Adobe Express, AI Retouching",
     description: "Created high-contrast educational infographics featuring clean typographic highlights and keyword-focused formatting."
   },
